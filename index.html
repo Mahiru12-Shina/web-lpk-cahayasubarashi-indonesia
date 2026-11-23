@@ -1,0 +1,2055 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      LPK Cahaya Subarashi Indonesia | Sending Organization Magang Jepang
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#C41E3A",
+              secondary: "#1A365D",
+              accent: "#F8B4C4",
+              dark: "#0F172A",
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+              jp: ["Noto Sans JP", "sans-serif"],
+            },
+            animation: {
+              marquee: "marquee 40s linear infinite",
+              "marquee-reverse": "marquee-reverse 45s linear infinite",
+              float: "float 6s ease-in-out infinite",
+              "float-slow": "float 8s ease-in-out infinite",
+              "pulse-soft": "pulseSoft 3s ease-in-out infinite",
+              "bounce-soft": "bounceSoft 2.5s ease-in-out infinite",
+              "spin-slow": "spin 12s linear infinite",
+            },
+            keyframes: {
+              marquee: {
+                "0%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(-50%)" },
+              },
+              "marquee-reverse": {
+                "0%": { transform: "translateX(-50%)" },
+                "100%": { transform: "translateX(0)" },
+              },
+              float: {
+                "0%,100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-14px)" },
+              },
+              pulseSoft: {
+                "0%,100%": { opacity: "1", transform: "scale(1)" },
+                "50%": { opacity: "0.85", transform: "scale(1.03)" },
+              },
+              bounceSoft: {
+                "0%,100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-6px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c41e3a;
+        border-radius: 4px;
+      }
+      .marquee-container:hover .marquee-track {
+        animation-play-state: paused;
+      }
+      .team-card {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .team-card:hover {
+        transform: translateY(-12px) scale(1.03);
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.3);
+      }
+      .team-card:hover .card-overlay {
+        opacity: 1;
+      }
+      .team-card:hover img {
+        transform: scale(1.08);
+      }
+      .hero-overlay {
+        background: linear-gradient(
+          135deg,
+          rgba(26, 54, 93, 0.93) 0%,
+          rgba(196, 30, 58, 0.78) 100%
+        );
+      }
+      .wa-float {
+        animation: float 3s ease-in-out infinite;
+      }
+      .shape {
+        position: absolute;
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      @keyframes borderGlow {
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 rgba(196, 30, 58, 0.4);
+        }
+        50% {
+          box-shadow: 0 0 20px 4px rgba(196, 30, 58, 0.25);
+        }
+      }
+      .glow-card {
+        animation: borderGlow 3s ease-in-out infinite;
+      }
+      /* Responsive helpers */
+      @media (max-width: 640px) {
+        .team-card {
+          width: 15rem; /* slightly narrower on mobile marquee */
+        }
+        h1 {
+          word-break: break-word;
+        }
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      /* Prevent horizontal scroll from absolute elements */
+      section {
+        overflow-x: clip;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-slate-800 bg-slate-50 overflow-x-hidden">
+    <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 md:h-20">
+          <a href="#home" class="flex items-center gap-3 group">
+            <img
+              src="images.jpg"
+              alt="Logo Cahaya Subarashi"
+              class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover shadow-lg group-hover:scale-110 transition-all duration-300"
+            />
+            <div class="hidden sm:block">
+              <p
+                class="font-bold text-white text-sm md:text-base leading-tight"
+              >
+                Cahaya Subarashi
+              </p>
+              <p class="text-xs text-white/80">LPK SO Indonesia</p>
+            </div>
+          </a>
+          <div class="hidden md:flex items-center gap-7">
+            <a
+              href="#home"
+              class="text-white/90 hover:text-white font-medium text-sm transition"
+              >Beranda</a
+            >
+            <a
+              href="#tentang"
+              class="text-white/90 hover:text-white font-medium text-sm transition"
+              >Tentang</a
+            >
+            <a
+              href="#program"
+              class="text-white/90 hover:text-white font-medium text-sm transition"
+              >Program</a
+            >
+            <a
+              href="#struktur"
+              class="text-white/90 hover:text-white font-medium text-sm transition"
+              >Struktur</a
+            >
+            <a
+              href="#tim"
+              class="text-white/90 hover:text-white font-medium text-sm transition"
+              >Tim</a
+            >
+            <a
+              href="#kontak"
+              class="text-white/90 hover:text-white font-medium text-sm transition"
+              >Kontak</a
+            >
+            <a
+              href="https://wa.me/6281339265091"
+              target="_blank"
+              class="bg-primary hover:bg-red-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg hover:scale-105 transition-all"
+              >Daftar Sekarang</a
+            >
+          </div>
+          <button id="menuBtn" class="md:hidden text-white p-2">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-secondary/98 backdrop-blur-md border-t border-white/10"
+      >
+        <div class="px-4 py-4 space-y-3">
+          <a href="#home" class="block text-white py-2 font-medium">Beranda</a>
+          <a href="#tentang" class="block text-white py-2 font-medium"
+            >Tentang</a
+          >
+          <a href="#program" class="block text-white py-2 font-medium"
+            >Program</a
+          >
+          <a href="#struktur" class="block text-white py-2 font-medium"
+            >Struktur</a
+          >
+          <a href="#tim" class="block text-white py-2 font-medium">Tim</a>
+          <a href="#kontak" class="block text-white py-2 font-medium">Kontak</a>
+          <a
+            href="https://wa.me/6281339265091"
+            target="_blank"
+            class="block bg-primary text-white text-center py-3 rounded-full font-semibold mt-2"
+            >Daftar Sekarang</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      <div class="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=2092&auto=format&fit=crop"
+          alt="Japan"
+          class="w-full h-full object-cover scale-105"
+          id="heroImg"
+        />
+        <div class="absolute inset-0 hero-overlay"></div>
+      </div>
+      <div
+        class="shape w-40 h-40 border border-white/15 top-24 right-16 animate-float opacity-40 hidden sm:block"
+      ></div>
+      <div
+        class="shape w-24 h-24 border border-accent/25 bottom-40 left-12 animate-float-slow opacity-50 hidden sm:block"
+        style="animation-delay: 1.2s"
+      ></div>
+      <div
+        class="shape w-16 h-16 bg-white/5 top-1/3 left-1/4 animate-pulse-soft hidden md:block"
+      ></div>
+      <div class="relative z-10 max-w-5xl mx-auto px-4 text-center pt-20">
+        <div data-aos="fade-down">
+          <span
+            class="inline-block bg-white/15 backdrop-blur-sm text-white text-xs md:text-sm font-medium px-5 py-2 rounded-full border border-white/25 mb-6 animate-pulse-soft"
+            >🇯🇵 Sending Organization Resmi Pertama di Riau</span
+          >
+        </div>
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6"
+        >
+          Wujudkan Impian<br /><span
+            class="text-accent inline-block animate-bounce-soft"
+            >Kerja di Jepang</span
+          >
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10"
+        >
+          LPK Cahaya Subarashi Indonesia membimbing kamu dari nol hingga siap
+          berangkat bersama sensei & tim profesional.
+        </p>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full max-w-md sm:max-w-none mx-auto"
+        >
+          <a
+            href="https://wa.me/6281339265091"
+            target="_blank"
+            class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-red-700 text-white font-semibold px-6 sm:px-8 py-3.5 sm:py-4 rounded-full shadow-xl hover:scale-105 transition-all w-full sm:w-auto"
+            >Chat WhatsApp</a
+          >
+          <a
+            href="#struktur"
+            class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-6 sm:px-8 py-3.5 sm:py-4 rounded-full border border-white/30 hover:scale-105 transition-all w-full sm:w-auto"
+            >Lihat Struktur Tim</a
+          >
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          class="mt-12 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-3xl mx-auto"
+        >
+          <div class="text-center group">
+            <p
+              class="text-3xl md:text-4xl font-bold text-white group-hover:scale-110 transition-transform"
+            >
+              SO
+            </p>
+            <p class="text-sm text-white/70 mt-1">Resmi Kemenaker</p>
+          </div>
+          <div class="text-center group">
+            <p
+              class="text-3xl md:text-4xl font-bold text-white group-hover:scale-110 transition-transform"
+            >
+              16+
+            </p>
+            <p class="text-sm text-white/70 mt-1">Anggota Tim</p>
+          </div>
+          <div class="text-center group">
+            <p
+              class="text-3xl md:text-4xl font-bold text-white group-hover:scale-110 transition-transform"
+            >
+              N4
+            </p>
+            <p class="text-sm text-white/70 mt-1">Target Bahasa</p>
+          </div>
+          <div class="text-center group">
+            <p
+              class="text-3xl md:text-4xl font-bold text-white group-hover:scale-110 transition-transform"
+            >
+              100%
+            </p>
+            <p class="text-sm text-white/70 mt-1">Bimbingan Job</p>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div
+          class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2"
+        >
+          <div class="w-1.5 h-2.5 bg-white/70 rounded-full animate-pulse"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang" class="py-20 md:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div data-aos="fade-right" class="relative mb-10 sm:mb-8">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+              <img
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop"
+                alt="Pelatihan"
+                class="w-full h-[400px] md:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div
+              class="absolute -bottom-4 left-4 right-4 sm:-bottom-6 sm:left-auto sm:-right-4 sm:right-auto bg-primary text-white px-4 sm:px-6 py-3 sm:py-4 rounded-2xl shadow-xl animate-float"
+            >
+              <p class="text-xs sm:text-sm font-medium opacity-90">Izin SO</p>
+              <p class="text-sm sm:text-lg font-bold break-all sm:break-normal">
+                No. 2/1814/HK.03.01/VII/2024
+              </p>
+            </div>
+          </div>
+          <div data-aos="fade-left">
+            <span
+              class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-3"
+              >Tentang Kami</span
+            >
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+              LPK Pertama di Riau yang Resmi Menjadi
+              <span class="text-primary">Sending Organization</span>
+            </h2>
+            <p class="text-slate-600 leading-relaxed mb-6">
+              <strong>LPK Cahaya Subarashi Indonesia</strong> adalah Lembaga
+              Pelatihan Kerja untuk program Magang & Tokutei Ginou ke Jepang.
+              Kami menjadi SO resmi pertama di Riau.
+            </p>
+            <p class="text-slate-600 leading-relaxed mb-8">
+              Dipimpin <strong>Agung Wasi Ibrahim</strong> (Direktur Utama),
+              didukung sekretaris, bendahara, administrasi, dan para sensei
+              bahasa Jepang berpengalaman.
+            </p>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div
+                class="flex items-start gap-3 p-4 bg-slate-50 rounded-xl hover:bg-primary/5 hover:scale-[1.02] transition-all"
+              >
+                <div
+                  class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center"
+                >
+                  <span class="text-primary font-bold">✓</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-secondary">Izin Resmi SO</p>
+                  <p class="text-sm text-slate-500">Kemenaker RI</p>
+                </div>
+              </div>
+              <div
+                class="flex items-start gap-3 p-4 bg-slate-50 rounded-xl hover:bg-primary/5 hover:scale-[1.02] transition-all"
+              >
+                <div
+                  class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center"
+                >
+                  <span class="text-primary font-bold">👥</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-secondary">Tim Lengkap</p>
+                  <p class="text-sm text-slate-500">16+ Personil</p>
+                </div>
+              </div>
+              <div
+                class="flex items-start gap-3 p-4 bg-slate-50 rounded-xl hover:bg-primary/5 hover:scale-[1.02] transition-all"
+              >
+                <div
+                  class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center"
+                >
+                  <span class="text-primary font-bold">🏠</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-secondary">Kelas Fleksibel</p>
+                  <p class="text-sm text-slate-500">
+                    Asrama / Non-Asrama / Malam
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-start gap-3 p-4 bg-slate-50 rounded-xl hover:bg-primary/5 hover:scale-[1.02] transition-all"
+              >
+                <div
+                  class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center"
+                >
+                  <span class="text-primary font-bold">🎯</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-secondary">Bimbingan Job</p>
+                  <p class="text-sm text-slate-500">Sampai Lolos & Berangkat</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM -->
+    <section id="program" class="py-20 md:py-28 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14" data-aos="fade-up">
+          <span
+            class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-3"
+            >Program Kami</span
+          >
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            Pilihan Program Pelatihan
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group glow-card"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2094&auto=format&fit=crop"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                alt="Magang"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-secondary mb-2">
+                Program Magang (Ginou Jisshu)
+              </h3>
+              <p class="text-slate-600 text-sm mb-4">
+                Pemagangan 3 tahun di Jepang. Pelatihan bahasa N4, budaya kerja,
+                dan interview.
+              </p>
+              <ul class="space-y-2 text-sm text-slate-600">
+                <li>✓ Durasi ±5 bulan</li>
+                <li>✓ Bimbingan sampai dapat job</li>
+                <li>✓ Biaya bisa dicicil</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group glow-card"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1480796927426-f609979314bd?q=80&w=2070&auto=format&fit=crop"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                alt="Tokutei"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-secondary mb-2">
+                Tokutei Ginou
+              </h3>
+              <p class="text-slate-600 text-sm mb-4">
+                Visa kerja khusus tenaga terampil untuk karier jangka panjang di
+                Jepang.
+              </p>
+              <ul class="space-y-2 text-sm text-slate-600">
+                <li>✓ Manufaktur, perawatan, dll</li>
+                <li>✓ Persiapan ujian skill</li>
+                <li>✓ Pendampingan dokumen</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all group glow-card"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                alt="Bahasa"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-secondary mb-2">
+                Kelas Bahasa Jepang
+              </h3>
+              <p class="text-slate-600 text-sm mb-4">
+                Dari dasar hingga N4/N5. Tersedia kelas asrama, non-asrama, dan
+                malam.
+              </p>
+              <ul class="space-y-2 text-sm text-slate-600">
+                <li>✓ Sensei lokal & native</li>
+                <li>✓ Kelas Zoom tersedia</li>
+                <li>✓ Latihan percakapan intensif</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRUKTUR ORGANISASI -->
+    <section id="struktur" class="py-20 md:py-28 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14" data-aos="fade-up">
+          <span
+            class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-3"
+            >Struktur Organisasi</span
+          >
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            Tim LPK Cahaya Subarashi
+          </h2>
+          <p class="text-slate-600 max-w-2xl mx-auto">
+            Hierarki lengkap kepemimpinan, administrasi, dan para sensei bahasa
+            Jepang.
+          </p>
+        </div>
+
+        <!-- Direktur Utama -->
+        <div class="flex justify-center mb-8" data-aos="zoom-in">
+          <div
+            class="bg-[#1e3a8a] text-white rounded-2xl px-8 sm:px-10 py-5 shadow-xl text-center w-full max-w-md mx-auto hover:scale-105 transition-transform"
+          >
+            <p
+              class="text-xs uppercase tracking-widest text-yellow-300 mb-1 font-semibold"
+            >
+              DIREKTUR UTAMA
+            </p>
+            <p class="text-xl sm:text-2xl font-bold">Agung Wasi Ibrahim</p>
+          </div>
+        </div>
+
+        <!-- Vertical connector -->
+        <div class="flex justify-center mb-4">
+          <div class="w-0.5 h-10 bg-slate-300"></div>
+        </div>
+
+        <!-- Main 4 branches -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-6">
+          <!-- SEKRETARIS -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="flex flex-col items-center"
+          >
+            <div
+              class="w-full bg-[#6366f1] text-white rounded-xl py-3 px-4 text-center shadow-md mb-3"
+            >
+              <p class="text-sm font-bold uppercase tracking-wide">
+                SEKRETARIS
+              </p>
+            </div>
+            <div class="w-full space-y-2">
+              <div
+                class="bg-white border-2 border-indigo-200 rounded-lg py-2.5 px-3 text-center shadow-sm"
+              >
+                <p class="font-semibold text-secondary text-sm">Wahyu Eka</p>
+              </div>
+              <div
+                class="bg-white border-2 border-indigo-200 rounded-lg py-2.5 px-3 text-center shadow-sm"
+              >
+                <p class="font-semibold text-secondary text-sm">
+                  Tara Annisa Meifin
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BENDAHARA -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            class="flex flex-col items-center"
+          >
+            <div
+              class="w-full bg-[#f97316] text-white rounded-xl py-3 px-4 text-center shadow-md mb-3"
+            >
+              <p class="text-sm font-bold uppercase tracking-wide">BENDAHARA</p>
+            </div>
+            <div class="w-full space-y-2">
+              <div
+                class="bg-white border-2 border-orange-200 rounded-lg py-2.5 px-3 text-center shadow-sm"
+              >
+                <p class="font-semibold text-secondary text-sm">
+                  Dwi Kurniasih
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ADMINISTRASI -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            class="flex flex-col items-center"
+          >
+            <div
+              class="w-full bg-[#16a34a] text-white rounded-xl py-3 px-4 text-center shadow-md mb-3"
+            >
+              <p class="text-sm font-bold uppercase tracking-wide">
+                ADMINISTRASI
+              </p>
+            </div>
+            <div class="w-full space-y-2">
+              <div
+                class="bg-white border-2 border-green-200 rounded-lg py-2.5 px-3 text-center shadow-sm"
+              >
+                <p class="font-semibold text-secondary text-sm">
+                  Uswatun Hasanah
+                </p>
+              </div>
+              <div
+                class="bg-white border-2 border-green-200 rounded-lg py-2.5 px-3 text-center shadow-sm"
+              >
+                <p class="font-semibold text-secondary text-sm">M. Romodan</p>
+              </div>
+              <div
+                class="bg-white border-2 border-green-200 rounded-lg py-2.5 px-3 text-center shadow-sm"
+              >
+                <p class="font-semibold text-secondary text-sm">Alif Al-Fath</p>
+              </div>
+              <div
+                class="bg-white border-2 border-green-200 rounded-lg py-2.5 px-3 text-center shadow-sm"
+              >
+                <p class="font-semibold text-secondary text-sm">Rizqi Amelia</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- INSTRUKTUR BAHASA JEPANG -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="250"
+            class="flex flex-col items-center"
+          >
+            <div
+              class="w-full bg-[#1e3a8a] text-white rounded-xl py-3 px-4 text-center shadow-md mb-3"
+            >
+              <p class="text-sm font-bold uppercase tracking-wide">
+                INSTRUKTUR BAHASA JEPANG
+              </p>
+            </div>
+            <div class="w-full grid grid-cols-2 gap-2">
+              <div class="space-y-2">
+                <div
+                  class="bg-white border-2 border-blue-200 rounded-lg py-2 px-2 text-center shadow-sm"
+                >
+                  <p
+                    class="font-semibold text-secondary text-xs sm:text-sm leading-tight"
+                  >
+                    Claudia Agustina
+                  </p>
+                </div>
+                <div
+                  class="bg-white border-2 border-blue-200 rounded-lg py-2 px-2 text-center shadow-sm"
+                >
+                  <p
+                    class="font-semibold text-secondary text-xs sm:text-sm leading-tight"
+                  >
+                    Rizky Nigmatullin
+                  </p>
+                </div>
+                <div
+                  class="bg-white border-2 border-blue-200 rounded-lg py-2 px-2 text-center shadow-sm"
+                >
+                  <p
+                    class="font-semibold text-secondary text-xs sm:text-sm leading-tight"
+                  >
+                    Rimanda Agustina
+                  </p>
+                </div>
+                <div
+                  class="bg-white border-2 border-blue-200 rounded-lg py-2 px-2 text-center shadow-sm"
+                >
+                  <p
+                    class="font-semibold text-secondary text-xs sm:text-sm leading-tight"
+                  >
+                    Bayu Tri Susanto
+                  </p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <div
+                  class="bg-white border-2 border-blue-200 rounded-lg py-2 px-2 text-center shadow-sm"
+                >
+                  <p
+                    class="font-semibold text-secondary text-xs sm:text-sm leading-tight"
+                  >
+                    Leo Andalas
+                  </p>
+                </div>
+                <div
+                  class="bg-white border-2 border-blue-200 rounded-lg py-2 px-2 text-center shadow-sm"
+                >
+                  <p
+                    class="font-semibold text-secondary text-xs sm:text-sm leading-tight"
+                  >
+                    Prianka Putra
+                  </p>
+                </div>
+                <div
+                  class="bg-white border-2 border-blue-200 rounded-lg py-2 px-2 text-center shadow-sm"
+                >
+                  <p
+                    class="font-semibold text-secondary text-xs sm:text-sm leading-tight"
+                  >
+                    Duta Rizky
+                  </p>
+                </div>
+                <div
+                  class="bg-white border-2 border-blue-200 rounded-lg py-2 px-2 text-center shadow-sm"
+                >
+                  <p
+                    class="font-semibold text-secondary text-xs sm:text-sm leading-tight"
+                  >
+                    Ley Wandes Manalu
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIM CARDS (2 Marquee) -->
+    <section id="tim" class="py-20 md:py-28 bg-slate-50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
+        <div class="text-center" data-aos="fade-up">
+          <span
+            class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-3"
+            >Tim Kami</span
+          >
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            Kenali Sensei & Staff
+          </h2>
+          <p class="text-slate-600 max-w-2xl mx-auto">
+            Kartu bergerak otomatis. Hover untuk menghentikan. Setiap kartu
+            dilengkapi jabatan & keterangan peran.
+          </p>
+        </div>
+      </div>
+
+      <!-- Marquee 1 - Leadership & Admin -->
+      <div class="marquee-container relative mb-8" data-aos="fade-up">
+        <div class="marquee-track flex gap-6 w-max animate-marquee py-3">
+          <!-- Original set -->
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/agung-wasi.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Agung Wasi Ibrahim"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pemimpin tertinggi LPK & penanggung jawab program SO
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >DIREKTUR UTAMA</span
+              >
+              <h3 class="font-bold text-secondary">Agung Wasi Ibrahim</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Pemimpin & Pengambil Keputusan
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/wahyu-eka.png"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Wahyu Eka"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Sekretaris — koordinasi administrasi & surat-menyurat
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-indigo-500 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >SEKRETARIS</span
+              >
+              <h3 class="font-bold text-secondary">Wahyu Eka</h3>
+              <p class="text-slate-500 text-xs mt-1">Sekretaris</p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/tara-annisa.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Tara Annisa Meifin"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Sekretaris — pengaturan jadwal & koordinasi internal
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-indigo-500 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >SEKRETARIS</span
+              >
+              <h3 class="font-bold text-secondary">Tara Annisa Meifin</h3>
+              <p class="text-slate-500 text-xs mt-1">Sekretaris</p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/dwi-kurniasih.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Dwi Kurniasih"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pengelolaan keuangan & laporan bendahara
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-orange-500 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >BENDAHARA</span
+              >
+              <h3 class="font-bold text-secondary">Dwi Kurniasih</h3>
+              <p class="text-slate-500 text-xs mt-1">Bendahara</p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/uswatun-hasanah.png"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Uswatun Hasanah"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Data siswa, dokumen, dan administrasi operasional
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-green-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >ADMINISTRASI</span
+              >
+              <h3 class="font-bold text-secondary">Uswatun Hasanah</h3>
+              <p class="text-slate-500 text-xs mt-1">Staff Administrasi</p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/m-romodan.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="M. Romodan"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pengolahan data & dukungan operasional harian
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-green-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >ADMINISTRASI</span
+              >
+              <h3 class="font-bold text-secondary">M. Romodan</h3>
+              <p class="text-slate-500 text-xs mt-1">Staff Administrasi</p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/alif.png"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Alif Al-Fath"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Administrasi dokumen keberangkatan & arsip
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-green-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >ADMINISTRASI</span
+              >
+              <h3 class="font-bold text-secondary">Alif Al-Fath</h3>
+              <p class="text-slate-500 text-xs mt-1">Staff Administrasi</p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/rizqi-amelia.png"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Rizqi Amelia"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Dukungan administrasi & pengelolaan data siswa
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-green-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >ADMINISTRASI</span
+              >
+              <h3 class="font-bold text-secondary">Rizqi Amelia</h3>
+              <p class="text-slate-500 text-xs mt-1">Staff Administrasi</p>
+            </div>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/agung-wasi.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Agung Wasi Ibrahim"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pemimpin tertinggi LPK & penanggung jawab program SO
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >DIREKTUR UTAMA</span
+              >
+              <h3 class="font-bold text-secondary">Agung Wasi Ibrahim</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Pemimpin & Pengambil Keputusan
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/wahyu-eka.png"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Wahyu Eka"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Sekretaris — koordinasi administrasi & surat-menyurat
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-indigo-500 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >SEKRETARIS</span
+              >
+              <h3 class="font-bold text-secondary">Wahyu Eka</h3>
+              <p class="text-slate-500 text-xs mt-1">Sekretaris</p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/tara-annisa.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Tara Annisa Meifin"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Sekretaris — pengaturan jadwal & koordinasi internal
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-indigo-500 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >SEKRETARIS</span
+              >
+              <h3 class="font-bold text-secondary">Tara Annisa Meifin</h3>
+              <p class="text-slate-500 text-xs mt-1">Sekretaris</p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/dwi-kurniasih.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Dwi Kurniasih"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pengelolaan keuangan & laporan bendahara
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-orange-500 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >BENDAHARA</span
+              >
+              <h3 class="font-bold text-secondary">Dwi Kurniasih</h3>
+              <p class="text-slate-500 text-xs mt-1">Bendahara</p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/uswatun-hasanah.png"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Uswatun Hasanah"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Data siswa, dokumen, dan administrasi operasional
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-green-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >ADMINISTRASI</span
+              >
+              <h3 class="font-bold text-secondary">Uswatun Hasanah</h3>
+              <p class="text-slate-500 text-xs mt-1">Staff Administrasi</p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/m-romodan.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="M. Romodan"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pengolahan data & dukungan operasional harian
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-green-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >ADMINISTRASI</span
+              >
+              <h3 class="font-bold text-secondary">M. Romodan</h3>
+              <p class="text-slate-500 text-xs mt-1">Staff Administrasi</p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/alif.png"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Alif Al-Fath"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Administrasi dokumen keberangkatan & arsip
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-green-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >ADMINISTRASI</span
+              >
+              <h3 class="font-bold text-secondary">Alif Al-Fath</h3>
+              <p class="text-slate-500 text-xs mt-1">Staff Administrasi</p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/rizqi-amelia.png"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Rizqi Amelia"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Dukungan administrasi & pengelolaan data siswa
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-green-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >ADMINISTRASI</span
+              >
+              <h3 class="font-bold text-secondary">Rizqi Amelia</h3>
+              <p class="text-slate-500 text-xs mt-1">Staff Administrasi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marquee 2 (reverse) - Instruktur -->
+      <div
+        class="marquee-container relative"
+        data-aos="fade-up"
+        data-aos-delay="150"
+      >
+        <div
+          class="marquee-track flex gap-6 w-max animate-marquee-reverse py-3"
+        >
+          <!-- Original set -->
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/claudia.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Claudia Agustina"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pengajar bahasa Jepang tingkat dasar hingga N4
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Claudia Agustina</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/rizky-nigmatullin.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Rizky Nigmatullin"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pengajar bahasa Jepang & persiapan ujian
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Rizky Nigmatullin</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/rimanda.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Rimanda Agustina"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pengajar kelas malam & non-asrama
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Rimanda Agustina</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/bayu.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Bayu Tri Susanto"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pembimbing utama program & persiapan interview
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Bayu Tri Susanto</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/leo-andalas.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Leo Andalas"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pembimbing culture training & disiplin kerja Jepang
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Leo Andalas</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/prianka.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Prianka Putra"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Latihan listening & speaking intensif
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Prianka Putra</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/duta-rizky.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Duta Rizky"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Persiapan mental & mock interview
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Duta Rizky</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/ley-wandes.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Ley Wandes Manalu"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pengajar bahasa Jepang tingkat dasar hingga N4
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Ley Wandes Manalu</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/claudia.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Claudia Agustina"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pengajar bahasa Jepang tingkat dasar hingga N4
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Claudia Agustina</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/rizky-nigmatullin.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Rizky Nigmatullin"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pengajar bahasa Jepang & persiapan ujian
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Rizky Nigmatullin</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/rimanda.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Rimanda Agustina"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pengajar kelas malam & non-asrama
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Rimanda Agustina</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/bayu.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Bayu Tri Susanto"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pembimbing utama program & persiapan interview
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Bayu Tri Susanto</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/leo-andalas.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Leo Andalas"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pembimbing culture training & disiplin kerja Jepang
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Leo Andalas</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/prianka.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Prianka Putra"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Latihan listening & speaking intensif
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Prianka Putra</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/duta-rizky.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Duta Rizky"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Persiapan mental & mock interview
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Duta Rizky</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+          <div
+            class="team-card flex-shrink-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden"
+          >
+            <div class="h-52 overflow-hidden relative">
+              <img
+                src="team/ley-wandes.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 object-top"
+                alt="Ley Wandes Manalu"
+              />
+              <div
+                class="card-overlay absolute inset-0 bg-secondary/60 opacity-0 transition-opacity duration-300 flex items-end p-4"
+              >
+                <p class="text-white text-xs">
+                  Pengajar bahasa Jepang tingkat dasar hingga N4
+                </p>
+              </div>
+            </div>
+            <div class="p-4 text-center">
+              <span
+                class="inline-block bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-2"
+                >INSTRUKTUR</span
+              >
+              <h3 class="font-bold text-secondary">Ley Wandes Manalu</h3>
+              <p class="text-slate-500 text-xs mt-1">
+                Instruktur Bahasa Jepang
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-sm text-slate-400 mt-10">
+        Tim resmi LPK Cahaya Subarashi Indonesia
+      </p>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section
+      class="py-20 md:py-28 bg-secondary text-white relative overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 animate-pulse-soft"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-96 h-96 bg-accent rounded-full blur-3xl translate-x-1/2 translate-y-1/2 animate-float-slow"
+        ></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14" data-aos="fade-up">
+          <span
+            class="inline-block text-accent font-semibold text-sm tracking-wider uppercase mb-3"
+            >Mengapa Kami?</span
+          >
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Keunggulan LPK Cahaya Subarashi
+          </h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/15 hover:scale-105 transition-all"
+          >
+            <div class="text-4xl mb-4 animate-bounce-soft">📜</div>
+            <h3 class="font-bold text-lg mb-2">SO Resmi Pertama di Riau</h3>
+            <p class="text-white/70 text-sm">
+              Izin Sending Organization dari Kemenaker RI tahun 2024
+            </p>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/15 hover:scale-105 transition-all"
+          >
+            <div
+              class="text-4xl mb-4 animate-bounce-soft"
+              style="animation-delay: 0.3s"
+            >
+              👥
+            </div>
+            <h3 class="font-bold text-lg mb-2">Tim Lengkap & Solid</h3>
+            <p class="text-white/70 text-sm">
+              Direktur, sekretaris, bendahara, administrasi & sensei
+            </p>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/15 hover:scale-105 transition-all"
+          >
+            <div
+              class="text-4xl mb-4 animate-bounce-soft"
+              style="animation-delay: 0.6s"
+            >
+              💰
+            </div>
+            <h3 class="font-bold text-lg mb-2">Biaya Bisa Dicicil</h3>
+            <p class="text-white/70 text-sm">
+              Pembayaran fleksibel sampai dapat job
+            </p>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/15 hover:scale-105 transition-all"
+          >
+            <div
+              class="text-4xl mb-4 animate-bounce-soft"
+              style="animation-delay: 0.9s"
+            >
+              🎯
+            </div>
+            <h3 class="font-bold text-lg mb-2">Bimbingan Sampai Berangkat</h3>
+            <p class="text-white/70 text-sm">
+              Dari belajar bahasa hingga COE & keberangkatan
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 md:py-20 bg-primary relative overflow-hidden">
+      <div
+        class="max-w-4xl mx-auto px-4 text-center relative"
+        data-aos="fade-up"
+      >
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Siap Mulai Perjalanan ke Jepang?
+        </h2>
+        <p class="text-white/90 text-lg mb-8">
+          Pendaftaran dibuka setiap bulan. Chat admin sekarang untuk info
+          syarat, biaya, dan jadwal kelas.
+        </p>
+        <a
+          href="https://wa.me/6281339265091"
+          target="_blank"
+          class="inline-flex items-center gap-3 bg-white text-primary font-bold px-8 py-4 rounded-full shadow-xl hover:scale-105 transition-all text-lg"
+          >Hubungi via WhatsApp</a
+        >
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="py-20 md:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14" data-aos="fade-up">
+          <span
+            class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-3"
+            >Hubungi Kami</span
+          >
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            Kontak & Lokasi
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+          <div data-aos="fade-right" class="space-y-5">
+            <div
+              class="flex items-start gap-4 p-5 bg-slate-50 rounded-2xl hover:shadow-md transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0"
+              >
+                📍
+              </div>
+              <div>
+                <h3 class="font-bold text-secondary mb-1">Alamat</h3>
+                <p class="text-slate-600 text-sm">
+                  Jl. Garuda Sakti Km.1, Simpang Baru, Kec. Tampan, Kota
+                  Pekanbaru, Riau 28293
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-4 p-5 bg-slate-50 rounded-2xl hover:shadow-md transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0"
+              >
+                📱
+              </div>
+              <div>
+                <h3 class="font-bold text-secondary mb-1">WhatsApp</h3>
+                <a
+                  href="https://wa.me/6281339265091"
+                  class="text-primary font-medium hover:underline"
+                  >+62 813-3926-5091</a
+                >
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-4 p-5 bg-slate-50 rounded-2xl hover:shadow-md transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0"
+              >
+                ✉️
+              </div>
+              <div>
+                <h3 class="font-bold text-secondary mb-1">Email</h3>
+                <p class="text-slate-600 text-sm">
+                  subarashiindonesia@gmail.com
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-start gap-4 p-5 bg-slate-50 rounded-2xl hover:shadow-md transition-all"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0"
+              >
+                🕐
+              </div>
+              <div>
+                <h3 class="font-bold text-secondary mb-1">Jam Operasional</h3>
+                <p class="text-slate-600 text-sm">
+                  Senin–Jumat: 08.00–16.00<br />Sabtu: 08.00–13.00
+                </p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-left" class="space-y-6">
+            <div
+              class="rounded-2xl overflow-hidden shadow-lg h-72 bg-slate-200"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.683335053897!2d101.36353357349188!3d0.471308763772819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a93533951b85%3A0xdf8db81a1fcccb07!2sLPK%20JEPANG%20SO%20CAHAYA%20SUBARASHI%20INDONESIA%20-%20PEKANBARU%20RIAU!5e0!3m2!1sid!2sid!4v1795367924620!5m2!1sid!2sid"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="bg-slate-50 rounded-2xl p-6">
+              <h3 class="font-bold text-secondary mb-4">Media Sosial</h3>
+              <div class="flex flex-wrap gap-3">
+                <a
+                  href="https://www.instagram.com/cahayasubarashiindonesia/"
+                  target="_blank"
+                  class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:scale-105 transition"
+                  >Instagram</a
+                >
+                <a
+                  href="https://www.tiktok.com/@subarashipku"
+                  target="_blank"
+                  class="bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium hover:scale-105 transition"
+                  >TikTok</a
+                >
+                <a
+                  href="https://www.facebook.com/cahayasubarashiindonesia"
+                  target="_blank"
+                  class="bg-blue-600 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:scale-105 transition"
+                  >Facebook</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 mb-10"
+        >
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"
+              >
+                <span class="text-white font-bold font-jp">光</span>
+              </div>
+              <div>
+                <p class="font-bold">Cahaya Subarashi</p>
+                <p class="text-xs text-white/60">LPK SO Indonesia</p>
+              </div>
+            </div>
+            <p class="text-sm text-white/60">
+              Lembaga Pelatihan Kerja resmi Sending Organization untuk program
+              Magang & Tokutei Ginou ke Jepang di Pekanbaru, Riau.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Navigasi</h4>
+            <ul class="space-y-2 text-sm text-white/60">
+              <li>
+                <a href="#home" class="hover:text-white transition">Beranda</a>
+              </li>
+              <li>
+                <a href="#tentang" class="hover:text-white transition"
+                  >Tentang</a
+                >
+              </li>
+              <li>
+                <a href="#program" class="hover:text-white transition"
+                  >Program</a
+                >
+              </li>
+              <li>
+                <a href="#struktur" class="hover:text-white transition"
+                  >Struktur</a
+                >
+              </li>
+              <li>
+                <a href="#tim" class="hover:text-white transition">Tim</a>
+              </li>
+              <li>
+                <a href="#kontak" class="hover:text-white transition">Kontak</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Program</h4>
+            <ul class="space-y-2 text-sm text-white/60">
+              <li>Magang Jepang (Ginou Jisshu)</li>
+              <li>Tokutei Ginou</li>
+              <li>Kelas Bahasa Jepang</li>
+              <li>Persiapan Interview</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 pt-6 text-center text-sm text-white/50"
+        >
+          <p>
+            © 2024–2026 LPK Cahaya Subarashi Indonesia. All rights reserved.
+          </p>
+          <p class="mt-1">SK/Izin SO: Nomor 2/1814/HK.03.01/VII/2024</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WA -->
+    <a
+      href="https://wa.me/6281339265091"
+      target="_blank"
+      class="wa-float fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
+    >
+      <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true,
+        offset: 60,
+        easing: "ease-out-cubic",
+      });
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add(
+            "bg-secondary/95",
+            "backdrop-blur-md",
+            "shadow-lg",
+          );
+          navbar.classList.remove("bg-transparent");
+        } else {
+          navbar.classList.remove(
+            "bg-secondary/95",
+            "backdrop-blur-md",
+            "shadow-lg",
+          );
+          navbar.classList.add("bg-transparent");
+        }
+      });
+      document.getElementById("menuBtn").addEventListener("click", () => {
+        document.getElementById("mobileMenu").classList.toggle("hidden");
+      });
+      document.querySelectorAll("#mobileMenu a").forEach((link) => {
+        link.addEventListener("click", () =>
+          document.getElementById("mobileMenu").classList.add("hidden"),
+        );
+      });
+      window.addEventListener("scroll", () => {
+        const heroImg = document.getElementById("heroImg");
+        if (heroImg && window.scrollY < window.innerHeight) {
+          heroImg.style.transform = `scale(1.05) translateY(${window.scrollY * 0.15}px)`;
+        }
+      });
+    </script>
+  </body>
+</html>
